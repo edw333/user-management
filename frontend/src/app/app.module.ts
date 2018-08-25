@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import {RouterModule} from "@angular/router";
+import {FormsModule} from "@angular/forms";
 
 const routes = [
   {path: "login", component: LoginComponent}
@@ -16,7 +17,8 @@ const routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
